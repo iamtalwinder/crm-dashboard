@@ -12,3 +12,5 @@ export * from './certificate-icon';
 export * from './history-icon';
 export * from './timer-icon';
 export * from './truck-icon';
+export * from './email-icon';
+export * from './phone-icon';

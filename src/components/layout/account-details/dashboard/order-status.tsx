@@ -1,18 +1,21 @@
-import { BellIcon } from "@/components/icons"
 import { CardSection, DateModePicker, RoundedSelect } from "@/components/shared"
-
 import { ORDER_STATUS } from "@/data/orders"
 import clsx from "clsx"
 import { PieChart, Pie, Cell } from "recharts"
-
+import ClassifyIcon from "@/components/icons/classify-icon"
+import CelebrateIcon from "@/components/icons/celebrate-icon"
+import TimerIcon from "@/components/icons/timer-icon"
+import TruckIcon from "@/components/icons/truck-icon"
+import CertificateIcon from "@/components/icons/certificate-icon"
+import HistoryIcon from "@/components/icons/history-icon"
 
 const statusConfig = [
-  { key: "all", label: "All", icon: <BellIcon /> },
-  { key: "new", label: "New", icon: <BellIcon /> },
-  { key: "pending", label: "Pending", icon: <BellIcon /> },
-  { key: "dispatched", label: "Dispatched", icon: <BellIcon /> },
-  { key: "delivered", label: "Delivered", icon: <BellIcon /> },
-  { key: "cancelled", label: "Cancelled", icon: <BellIcon /> },
+  { key: "all", label: "All", icon: <ClassifyIcon /> },
+  { key: "new", label: "New", icon: <CelebrateIcon /> },
+  { key: "pending", label: "Pending", icon: <TimerIcon /> },
+  { key: "dispatched", label: "Dispatched", icon: <TruckIcon /> },
+  { key: "delivered", label: "Delivered", icon: <CertificateIcon /> },
+  { key: "cancelled", label: "Cancelled", icon: <HistoryIcon /> },
 ]
 
 const COLORS = ["#EF4444", "#FACC15", "#22C55E", "#8B5CF6", "#6366F1"]

@@ -1,6 +1,7 @@
 import { GenericTabs, TabConfig } from "@/components/shared"
 import { Dashboard } from "./dashboard"
 import { EmptyScreen } from "./empty-screen"
+import { ProfileHeader } from "./dashboard/profile-header"
 
 const tabs: TabConfig[] = [
   {
@@ -45,7 +46,7 @@ export function AccountDetail() {
     <main className="p-6">
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 lg:col-span-3">
-          left
+          <ProfileHeader />
         </div>
 
         <div className="col-span-12 lg:col-span-9">
