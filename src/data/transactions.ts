@@ -6,7 +6,7 @@ export const RECENT_TRANSACTIONS = [
     channel: "ebay",
     customer: {
       name: "Gabriella Smith",
-      avatar: "/avatars/harris.png"
+      avatar: "/avatars/gabriella.png"
     },
     total: 40999
   },
@@ -28,7 +28,7 @@ export const RECENT_TRANSACTIONS = [
     channel: "facebook",
     customer: {
       name: "Lilia Ponce",
-      avatar: "/avatars/harris.png"
+      avatar: "/avatars/lilia.png"
     },
     total: 16990
   },
@@ -39,7 +39,7 @@ export const RECENT_TRANSACTIONS = [
     channel: "amazon",
     customer: {
       name: "Rehan Choudhary",
-      avatar: "/avatars/harris.png"
+      avatar: "/avatars/rehan.png"
     },
     total: 26499
   },
@@ -50,7 +50,7 @@ export const RECENT_TRANSACTIONS = [
     channel: "etsy",
     customer: {
       name: "Maxim Brown",
-      avatar: "/avatars/harris.png"
+      avatar: "/avatars/maxim.png"
     },
     total: 31990
   }

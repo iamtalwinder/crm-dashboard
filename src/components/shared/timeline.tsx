@@ -58,7 +58,7 @@ export function Timeline() {
                           <span className="text-blue font-medium">{reply.actor}</span>{" "}
                           {reply.action}{" "}
                           {reply.target && <span className="text-blue font-medium">{reply.target}</span>}
-                          {reply.message && <span className="text-text-primary"> {reply.message}</span>}
+                          {reply.message && <span className="text-blue font-medium"> {reply.message}</span>}
                           <span className="ml-2 text-xs text-muted-foreground">&bull; {reply.time}</span>
                         </div>
                       </li>

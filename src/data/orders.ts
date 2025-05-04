@@ -34,7 +34,7 @@ export const ORDER_STATS = {
 }
 
 export const ORDER_STATUS = {
-  all: 50, 
+  all: 50,
   new: 50,
   pending: 50,
   dispatched: 50,
@@ -51,7 +51,7 @@ export const RECENT_ORDERS: Order[] = [
     channel: "ebay",
     customer: {
       name: "Gabriella Adams",
-      avatar: "/avatars/harris.png",
+      avatar: "/avatars/gabriella.png",
     },
     total: 400.0,
   },
@@ -75,7 +75,7 @@ export const RECENT_ORDERS: Order[] = [
     channel: "facebook",
     customer: {
       name: "Lilia Ponce",
-      avatar: "/avatars/harris.png",
+      avatar: "/avatars/lilia.png",
     },
     total: 167.0,
   },
@@ -87,7 +87,7 @@ export const RECENT_ORDERS: Order[] = [
     channel: "amazon",
     customer: {
       name: "Rehan Choudhary",
-      avatar: "/avatars/harris.png",
+      avatar: "/avatars/rehan.png",
     },
     total: 262.0,
   },
@@ -99,7 +99,7 @@ export const RECENT_ORDERS: Order[] = [
     channel: "etsy",
     customer: {
       name: "Maxim Brooks",
-      avatar: "/avatars/harris.png",
+      avatar: "/avatars/maxim.png",
     },
     total: 319.0,
   },

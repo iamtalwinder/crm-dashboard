@@ -25,7 +25,7 @@ export function RecentOrders() {
     <DataTable
       data={RECENT_ORDERS}
       columns={[
-        { key: "orderId", label: "Order ID", width: "w-[15%]", 
+        { key: "orderId", label: "Order ID", width: "w-[15%]",
           render: (_, row) => (
             <div>
               <span>{row.orderId}</span>
@@ -67,7 +67,7 @@ export function RecentOrders() {
           label: "Total",
           align: "right",
           width: 'w-[10%]',
-          render: (val) => `${val}`,
+          render: (val) => `$${val}`,
         },
       ]}
     />

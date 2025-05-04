@@ -24,7 +24,7 @@ export function DataTable<T>({ data, columns }: DataTableProps<T>) {
               <th
                 key={String(col.key)}
                 className={cn(
-                  "p-2 bg-foreground border-b font-medium text-left text-muted-foreground whitespace-nowrap",
+                  "p-2 bg-foreground border-b font-medium text-left text-muted-foreground whitespace-nowrap uppercase",
                   col.align === "center" && "text-center",
                   col.align === "right" && "text-right",
                   col.width
