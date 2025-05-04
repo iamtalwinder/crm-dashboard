@@ -1,7 +1,26 @@
 import React from "react";
+import { useResolvedTheme } from "@/lib/hooks";
 
 export function WalmartIcon() {
-  return (
+  const { isDarkTheme } = useResolvedTheme();
+
+  return isDarkTheme ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="79"
+      height="26"
+      viewBox="0 0 79 26"
+    >
+      <image
+        xlinkHref="data:image/png;base64,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"
+        x="0"
+        y="0"
+        width="79"
+        height="26"
+      />
+    </svg>
+  ) : (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

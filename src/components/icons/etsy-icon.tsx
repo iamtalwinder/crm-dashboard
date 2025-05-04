@@ -1,7 +1,26 @@
 import React from "react";
+import { useResolvedTheme } from "@/lib/hooks";
 
 export function EtsyIcon() {
-  return (
+  const { isDarkTheme } = useResolvedTheme();
+
+  return isDarkTheme ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="44"
+      height="26"
+      viewBox="0 0 44 26"
+    >
+      <image
+        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAaCAYAAADMp76xAAAAAXNSR0IArs4c6QAABBtJREFUWEfNmM9vG0UUx7+z3h9Zu80GGktRIXZRU1G1dbkgBMKBtieU5B9ITQNIUNogkHqiPnBCIuaEBDQuQgKEsDlxi424oEpxxAUJJEuoEiBUt0JRk0LtxHY3uzuD3rIbXCuKd0tSdy7enV/vs2++82aeGbqKEEIHEAMwAEAGEAEgdffbpXcOwAFgA7gD4DZjjJ43C/OfhBAEtQ/AIIAWgA1vME0idgmwe1riIQ5ykgIgCmANwC3GGHHABfZgHwVAlY37CNjLD8S3x1vpGwTtA8cBqB5sr0n60W4AMBljK0wIQa4fBbD6AHl2K6mQU/8k4GFPM6TbB7mQNCwCJu22vU0WGnjj/VMJ9e3va6EHhh9AktUJ+ACFDy8ibDlNe0bPc8ucchsVbcHvxGwzDbB6tOikw9sPPYIixxABHwSw0ku/rRmtKBz7eKzgHPNNtQtvGfzbfDH2lTVJdc2X92SVg08V1Hd2xeMUIOIEfAjAcq/vbZ7R8uD2uA9MsHrmw3rrXDwTvbxS2Hj3VMK6eqWsHD4x0Q28g7IZuWfg1kvRnDz29DzBmRfG0vbNP3Lg/Dgi8iLjTiJa5Kn1s/GMdKcxKav6ot1qzKqJo6fNG1dz1C4iWkV64bWLqHyT5o3lLDlMmnhjkpywjfNCAtvWFLToPLOtlHCsceXIiWd9b7bOxjNibTUf+1rQSemW9UxkSR2Mv6fml0vm6/HT/LnpEtXzhY+uY8C4GPv89rwrpReVkvL4+PkAUgoJ3CmJGT0fOfTM3HbAvu6h6IVObbv1nBukfVdKv/6QjX3ZPt9LlgDuHZgMESz9kiH7enW828NUT5511m5lBWNMOfy8q29XQsu/l6WpN0fx3ac5Zf/YvJyrVncUeKsoQQYo5En7Hik4zXqyG7j5ytAsLbsbTcqXSlD0UuyL9TlfBpDkGrid8KPMjgG3LhxIi5u1y+AwEBucYxGF4jaE2U7CbGaVIyePOc2/DX7t5yXSJoRtkASsX66UpeTRaaRO1nj54yVt9IlpOfeT68nmq0OzaNZz8uDwOe2TlWIAWOoSTBLuhlHUuqTod+1gbrUNydowfIPUzzbbSfmhkUXtg98qtPRsbTXlftze4SrVdcZwUbpUiRYdtz1gcYEDHRwBJ9y2Gx0s2shjC6RXepY1/VoI724eHD2P5p2AdWVwRssL8CQTEEzVK9HPGq6eA5bNo/l/XX4CGnO70eaTfiyn+JMT1R4HxFbT0uVnwL9e0p14PYzxPvSlPNMmYEo69we5APUB0jdJ+qV7e81PkeiFsuTtzvE+8mIv3dcZY6vdSSil1CSN+5Ul93IC8dHdhDLp/5JQN07+m+Y/3JHmW31O82mTUZpPq/7XXWl+52d6SSllqZr330A//kghZ5kUCRljlL5tln8AE44MHTz7i+wAAAAASUVORK5CYII="
+        x="0"
+        y="0"
+        width="44"
+        height="26"
+      />
+    </svg>
+  ) : (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

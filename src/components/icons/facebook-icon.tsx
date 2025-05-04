@@ -1,7 +1,26 @@
 import React from "react";
+import { useResolvedTheme } from "@/lib/hooks";
 
 export function FacebookIcon() {
-  return (
+  const { isDarkTheme } = useResolvedTheme();
+
+  return isDarkTheme ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="72"
+      height="26"
+      viewBox="0 0 72 26"
+    >
+      <image
+        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAaCAYAAAAUqxq7AAAAAXNSR0IArs4c6QAABTNJREFUWEftmctvW0UUxn9jJ7HjOnHrJhS1jYOooFRqkGCBQJgINgg1+QuaZUWVhJbXKlFXLKoY8Sgt4GwQEov4L3AqJDaFOAWxQaq7IFRQ1Sql0FDqNkkTP+5Fn3Mnca28WtEFce7q2jNzZuY733fO3DOGmsd13WZgGxAEGgA/4Kvtt0l+O0AZKAHzwC1jjN6XHmPfXNcVCDuBVmAOKHiDZcTdJIDUbkP7175FgkYgBNwB/jbGaN9UAPLA2Qvoz9ubGJD1/Cw8wp5yrgokC1A70OSBs56RemiPAAvGmBvGdV1RqwOYrmPmrCQ9keaaAGrzNKi4s/UsIyCpFQWQYs9dLyhvAbSMgEJOswB6TOnNy1hbAC0joMy2XQDtA26sFH9eO0Usc4mE49JlID87SvxhIRg5xmixTLwjysDUSTL/9TzPnaTr4lVSPkN2JsnhDdhXAmsXQE8A11caoEUvFOnDcCvgZzz/OQMbMPxAXcIDjJccXups49DDAGj/CeJXpjnb4GdiJknPBhf56JoAhfq56LjEDsR48acTZDdo9IG6/e8AirzB6EKZXlwiDX7SwUay06cZkSd+/4dBIOL3kYs0k87P0RttZvzyh6TfHCOS+pHB+eKiHNXnhX2MfP0OOUn2h98YLJXpUtv2IKmrHzOmdwtQNEz/7bv0ui6xBj9ZO1Z91rJd0y77lfXZ8bUMkq2vzpPQuMd3k1yFAKszKDRA1nHolAGfjyvSbnuI1B93SHkbv+BABJftrksk3MTI4edJfjHBpFgnWfoMedlobWbo2U7S304x6YIruZYdYpJUKEjy5mmGLEDVtl2HTp8h172fQ/r/uynOyrbWo5hYdnjatssBlvGau8GQlX2NkwLm5ohUS6z1GKlCkd5wkBE5fhXab0xiLz/FQS3AbkIb/usTktWeF0DBRnLTs4waH1dejxM/00derNFYG8/EkGsfLYJs7R3tpuPLDCltqHrBdkywiaQ+mOYKDAYaGLOxMHqchP2vJUBGc/t9XLDJxLYr7uzZwYgFSMxSbF0HHC3x/gCyHrKAyULbcYZnCgwLoKJDbKFEn96nP73XK9UMqfWW7GV+YbQ2SO99lz5tWhLXmFKZ3rZtDFhZVsvGb8jVzi3nnPuZi2JZx076BZDYJdYD+aPdHJQT1wia9wfQtn4myy5d1ZnGelmg+Pzkb98lUZsprN7tBna2MmEXVSgTuZxg3AK4HoOsJDX+kbcZ9OZLh5rI6D3QyFj+s8VsawH2+7mwdwdDlkFNfrJinth2JE7PGiDdH0C73mIgP8/7mtzzaqRUXtS5ADryCskz35BR7BBI8mqhTG9zgLH2MOmKBwFtotGQmy8vBnKl3WqG1doWw9Tv3BSTNmn4DXkBbmPMqwfIVc2dVrvmVnyUrFuC5KpjkHXsOmm/AtCqB0Ut2oFY95P0KI5YSc2WOFwBwcdEa4ixW3MMtwRJ/nmKUdH6/CUSBYe4qKw+e6KM6GxTyYA3GbbBU22hAOOKZ8qaRYf4rghD1/MkrH07VnNXDq6eFCtOqrJt27//leGFEj127miYZO4Dxp95j66p6/ceFMODpHQIDjWRWiFQLx0Utz41Vg5CS58aWx+rKwOkj9WgLXeoJjSzRjSvxybV5UsCSEX63at9sNYjMl4pWnWynC256oduMdY6E9QTVi2qjxljpmuL9rrykNQ26y3Gek4WHrrV0cF9uWivUd7NRrTq2qdYZ9c+Csq69pGKbt5z7VMNq1fEV1U/4N0V1cPFociwAMwaY1R+Xnr+BfLJ3B0cf96LAAAAAElFTkSuQmCC"
+        x="0"
+        y="0"
+        width="72"
+        height="26"
+      />
+    </svg>
+  ) : (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

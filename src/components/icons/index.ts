@@ -31,3 +31,5 @@ export * from './walmart-icon';
 export * from './facebook-icon';
 export * from './etsy-icon';
 export * from './us-flag-icon';
+export * from './chat-icon';
+export * from './celebrate-icon';

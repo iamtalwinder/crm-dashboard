@@ -1,7 +1,26 @@
 import React from "react";
+import { useResolvedTheme } from "@/lib/hooks";
 
 export function AmazonIcon() {
-  return (
+  const { isDarkTheme } = useResolvedTheme();
+
+  return isDarkTheme ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="61"
+      height="26"
+      viewBox="0 0 61 26"
+    >
+      <image
+        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAaCAYAAAAEy1RnAAAAAXNSR0IArs4c6QAABXRJREFUWEfdWM9vG0UU/t6sPZtNUxxBK1WIulSUW5J/oK4EHHGOlZDiS5Hg4Bx6tv+CpFcOjpCQ6MWtOJP0jFRXCC5IdsWply4VKmpBdaFe73pnH3qbncUxTuPQItWdi3c8M2/f9358++YRJgYzewBOAFgAUADgAFCT+17heQLAAIgBDAE8ISJ5zgfZJ2YWYG8BeAPAAECUHRYh/AqDnFRNMAkWcVYRwCKAPwH8TkSCBSnoDPA7AOTPp3MG8ih/CMalLGofCHAL+jQAnQE+Ssi8rpcAhET0iJhZQuAsgMevmYenhb0491cBfSqLf8nj131ImI8EtORykBHXAdBBFG0SqM7M5wD2FdSu6xYbsildY6pywnukqApCmRh7RNxKmHZkDnCHtW54QD8IghKRswlFG6k8oi4lvLewoLfG5Y0rwMR9T+uNfB1U31/njgK2tNZ+HMerseFtBnog9lN9gX5RUb1QKPQmvCgp7Anod4XWM6bO9wzCsEagHQLuJ4wbirDBwDkkaHiebgXDSIDV5AUOESfMy5lCPkDlXJDdH462Ad4E0CVCjxnrAEoKzseu63QGw2GTyKlkMtbSNULX1boyiKImMZpyFgQf6Vn24boXlTGrSWxuyTlF9MTqQaDbC26xOgFaGH1ZQL8H4NFkPkfGVI0x605m0cEwahKhCUbbW9B1CxqEtqd1fRiO9hh8CcCu5+qNYRTtMKOW748iAbxq5eVGY2wtZt4WBa2x5dkhrGit+0EY/TI29wdhdIeAVQbXnULhvgUt+9lxyjIXZyy6WrhqfAhxnxbQ7wN4OC2Zw9BUmEwNTGUmXgOjNAmaM6UnQUwaSeRHkakmMOsMWgX4nMiz5/fXo7JhvpVGCqHhad0KjalYUJ6rpYZAbnBQSxXUbrbue65e2ZeBu7LP7p/AduZQ0DakJLxJFbaY40sHPGfDe0bQwVh4K1VoJUks4b0+DnoQhndIDJJFjyj7XNCMtio67ZcGOgupPOf+Fa7HA92wIVp01EUhGJsOFvRY3krJ1AacXZio43ke7Fm4+qyQYp5KCRpKO93/ATS1ElK3wfE1CTvJFXL1CobRdkpks3k6By1EmBaIjO007Ii60MUqsrw9GIrse667YkEqWF3MTSEtAldsDgN48fAO4rgOk1yzrGjAO4qxwYQejKmDnOOAro97MmVZ8DZSRqa25xYbgRAhcafgON39rxKXTcI1TxcrkqcJYy/9emQsbThpLrpu24a/ZfoXymlLLEqp0mg08j3PS7+18puSSRCUHMcpGWP6du1586Pk4burJTy4WcUoSIGBPB9XHrXHPS8AHea+1ceuCVB5lu+2fc/4fGYim8bm6X8/XC3h7ldNOCd6k0odemaWhevLmyAwnGIfw6fr4HgNn5uVWY4ec8/h7H2koK/faGL0rAalb2P5QguXe5PVz5EiDmz49qMyHv9YSz2MUQlxUMFnYVqNveSRgp5anMz0IlH0t++bSIY1QPmpAQpLHSyd6eLUhz4++CJNhalDzvZ7FYTP1sDDaloDFJZ2cP5KC/e+3MHJsy18cq8zkx6zb8qLk6ll6OxyAFjwHFaRl6NpYvahpMR10lwDzH55mkgtnw1F9+Es3UjBipEkfX6+volPn6Y1+UseeRl66IXjP73wmwsVDB5eggkrQFISFs4NIQDFENA9FN0uTpzv4PJPL5YWx1NSLhwL9mopd+q/jnd+LndL7y8W0NIIfHvapWMuYR2utOSz9A582y6SiXQ/Dyee+bfASbnTENHjycagtEolzOep+3mUOwSj3M6kQ/pPY1BOZR3RN8dawKPXoAUsxCUtYIngPw60gMdNlTUKpXPoZn3jeW32i9NCAM+ISNph+fgb6bSRLCFiE7wAAAAASUVORK5CYII="
+        x="0"
+        y="0"
+        width="61"
+        height="26"
+      />
+    </svg>
+  ) : (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
