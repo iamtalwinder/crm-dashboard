@@ -60,8 +60,8 @@ export function OrderStatusChart() {
               data={chartData}
               cx="50%"
               cy="50%"
-              innerRadius={70}   
-              outerRadius={110} 
+              innerRadius={70}
+              outerRadius={110}
               dataKey="value"
               labelLine={false}
               label={({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
