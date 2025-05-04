@@ -1,4 +1,4 @@
-export const TIME_TOGGLE_OPTIONS = ['Day', 'Week', 'Month'];
+export const TIME_TOGGLE_OPTIONS = ['Day', 'Week', 'Year'];
 
 export const RECENT_ACTIVITIES_OPTIONS = ['Message', 'Email'];
 
