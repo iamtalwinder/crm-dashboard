@@ -2,9 +2,9 @@ import { KpiCard } from "@/components/shared";
 import { ORDER_STATS } from "@/data/orders";
 import OrdersIcon from "@/components/icons/orders-icon";
 import TokenIcon from "@/components/icons/token-icon";
-import { RevenueIcon } from "@/components/icons/revenue-icon";
 import PendingOrdersIcon from "@/components/icons/pending-orders-icon";
 import PendingReturnsIcon from "@/components/icons/pending-returns-icon";
+import RevenueIcon from "@/components/icons/revenue-icon";
 
 export function KPICards() {
   const stats = [
