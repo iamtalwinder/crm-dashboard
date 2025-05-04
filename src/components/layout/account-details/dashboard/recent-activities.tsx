@@ -27,11 +27,11 @@ export type TimelineGroup = {
 export function RecentActivities() {
   return <CardSection
     leftTitle="Recent Activities"
-    height="max-h-[416px] min-h-[416px]"
+    height="max-h-[410px] min-h-[410px]"
     rightActions={
       <PillToggle options={RECENT_ACTIVITIES_OPTIONS} />
     }
-    contentContainerClassName="overflow-auto"
+    contentContainerClassName="overflow-auto bg-background"
   >
     <div className="p-4">
       <Timeline />

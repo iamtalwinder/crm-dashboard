@@ -8,3 +8,4 @@ export * from './status-card';
 export * from './date-picker';
 export * from './rounded-select';
 export * from './timeline';
+export * from './data-table';

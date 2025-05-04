@@ -5,7 +5,6 @@ import { ORDER_STATUS } from "@/data/orders"
 import clsx from "clsx"
 import { PieChart, Pie, Cell } from "recharts"
 
-
 const statusConfig = [
   { key: "all", label: "All", icon: <BellIcon /> },
   { key: "new", label: "New", icon: <BellIcon /> },
@@ -26,7 +25,7 @@ export function OrderStatusChart() {
   }))
 
   return (
-    <CardSection leftTitle="Order Status" height="max-h-[416px] min-h-[416px]" rightActions={
+    <CardSection leftTitle="Order Status" height="max-h-[410px] min-h-[410px]" rightActions={
       <>
         <RoundedSelect
           options={[
@@ -38,7 +37,9 @@ export function OrderStatusChart() {
 
         <DateModePicker mode="year" />
       </>
-    }>
+    }
+    contentContainerClassName="bg-background"
+    >
       <div className="flex justify-between items-start">
         <div className="grid grid-cols-2 flex-1 pr-[20px]">
           {statusConfig.map((status, index) => (
