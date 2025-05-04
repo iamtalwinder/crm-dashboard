@@ -1,4 +1,4 @@
-import { PillToggle } from "@/components/shared";
+import { DateModePicker, PillToggle } from "@/components/shared";
 import { CardSection } from "@/components/shared/card-sections";
 import { REVENUE_OPTIONS } from "../../constants";
 
@@ -8,7 +8,9 @@ export function RevenueChart() {
       <PillToggle options={REVENUE_OPTIONS} />
     }
     rightActions={
-      <div>Add actions</div>
+      <>
+        <DateModePicker mode="month" />
+      </>
     }
   >
     <div>revenue</div>

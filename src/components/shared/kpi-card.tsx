@@ -22,7 +22,7 @@ export function KpiCard({
 
   return (
     <div className="flex flex-col border rounded-[16px] bg-card text-card-foreground">
-      <div className="flex items-center gap-4 bg-background p-4 border-b rounded-[16px]">
+      <div className="flex items-center gap-4 bg-background p-4 border-b rounded-t-[16px]">
         <div className="text-2xl">{icon}</div>
         <div>
           <div className="text-[12px] leading-[18px] font-medium text-text-primary">

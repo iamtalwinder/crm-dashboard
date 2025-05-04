@@ -9,6 +9,7 @@ type CardSectionProps = {
   children: ReactNode;
   height?: string;
   className?: string;
+  contentContainerClassName?: string;
 };
 
 export function CardSection({
@@ -18,10 +19,11 @@ export function CardSection({
   children,
   height = "min-h-[400px]",
   className,
+  contentContainerClassName
 }: CardSectionProps) {
   return (
-    <Card className={cn("p-4 rounded-xl", height, className)}>
-      <div className="flex items-center justify-between mb-4">
+    <Card className={cn("rounded-xl p-0 gap-0", height, className)}>
+      <div className="flex items-center justify-between rounded-t-xl border-b bg-background p-4">
         <div className="flex items-center gap-2">
           {leftActions && <div>{leftActions}</div>}
           {leftTitle && (
@@ -34,8 +36,7 @@ export function CardSection({
           <div className="flex items-center gap-2">{rightActions}</div>
         )}
       </div>
-      <div className="-mx-4 h-px bg-muted" />
-      <div>{children}</div>
+      <div className={contentContainerClassName}>{children}</div>
     </Card>
   );
 }

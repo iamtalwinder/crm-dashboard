@@ -2,11 +2,12 @@
 
 import { KPICards } from "./kpi-cards"
 import { OrderStatusChart } from "./order-status"
+import { PersonsTable } from "./persons-table"
 import { RecentActivities } from "./recent-activities"
 import { RecentOrders } from "./recent-orders"
 import { RecentTransactions } from "./recent-transactions"
 import { RevenueChart } from "./revenue-chart"
-import { TopProductsTable } from "./top-produt-table"
+import { TopProductsTable } from "./top-product-table"
 
 export function Dashboard() {
   return (
@@ -35,8 +36,12 @@ export function Dashboard() {
         <TopProductsTable />
       </div>
 
-      <div className="col-span-12">
+      <div className="col-span-12 lg:col-span-6">
         <RevenueChart />
+      </div>
+
+      <div className="col-span-12 lg:col-span-6">
+        <PersonsTable />
       </div>
     </div>
   )

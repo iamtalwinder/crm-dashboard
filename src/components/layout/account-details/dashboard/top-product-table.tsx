@@ -1,10 +1,12 @@
-import { CardSection } from "@/components/shared";
+import { CardSection, DateModePicker } from "@/components/shared";
 
 export function TopProductsTable() {
   return <CardSection
       leftTitle="Top Sold Products"
       rightActions={
-        <div>Add actions</div>
+        <>
+          <DateModePicker mode="month" />
+        </>
       }
     >
       <div>Top Sold Products</div>
