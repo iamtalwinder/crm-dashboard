@@ -21,20 +21,18 @@ export function KpiCard({
   const isDown = trend === "down";
 
   return (
-    <div className="flex flex-col gap-4 p-4 border rounded-[16px] bg-card text-card-foreground">
-      <div className="flex items-center gap-4">
+    <div className="flex flex-col border rounded-[16px] bg-card text-card-foreground">
+      <div className="flex items-center gap-4 bg-background p-4 border-b rounded-[16px]">
         <div className="text-2xl">{icon}</div>
         <div>
-          <div className="text-[12px] leading-[18px] font-medium text-[#0E253CD9]">
+          <div className="text-[12px] leading-[18px] font-medium text-text-primary">
             {title}
           </div>
-          <div className="text-2xl font-semibold text-[#0E253CD9]">{value}</div>
+          <div className="text-2xl font-semibold text-text-primary">{value}</div>
         </div>
       </div>
 
-      <div className="-mx-4 h-px bg-[#0E253C1A]" />
-
-      <div className="flex items-center justify-between text-xs">
+      <div className="flex items-center justify-between text-xs bg-foreground p-4 rounded-[16px]">
         <span
           className={cn(
             "flex items-center gap-1 font-medium",
@@ -48,7 +46,7 @@ export function KpiCard({
           )}
           {percentage}
         </span>
-        <span className="font-medium text-[12px] leading-[18px] tracking-[0%] text-[#0E253CD9] font-inter">
+        <span className="font-medium text-[12px] leading-[18px] tracking-[0%] text-text-primary font-inter">
           {time}
         </span>
       </div>
