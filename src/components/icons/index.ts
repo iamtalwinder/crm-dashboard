@@ -1,6 +1,6 @@
 export * from './search-icon';
 export * from './bell-icon';
-export * from './code-icon';
+export * from './logo';
 export * from './orders-icon';
 export * from './token-icon';
 export * from './revenue-icon';
@@ -30,3 +30,4 @@ export * from './ebay-icon';
 export * from './walmart-icon';
 export * from './facebook-icon';
 export * from './etsy-icon';
+export * from './us-flag-icon';

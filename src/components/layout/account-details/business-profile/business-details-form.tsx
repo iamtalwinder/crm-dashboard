@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input'
 import { BUSINESS_PROFILE_MOCK } from '@/data/business'
 import { PlusIcon, RefreshCwIcon } from 'lucide-react'
 import { RoundedSelect } from '@/components/shared'
-import { SaveIcon } from '@/components/icons'
+import { SaveIcon, UsFlagIcon } from '@/components/icons'
 
 const ownerOptions = [
   { label: "suchithkumar@onechanneladmin.com", value: "suchithkumar@onechanneladmin.com" },
@@ -53,10 +53,22 @@ export function BusinessDetailsForm() {
       {BUSINESS_PROFILE_MOCK.phoneNumbers.map((phone, index) => (
         <div className="flex items-center gap-2" key={index}>
           <RoundedSelect
-            options={[{ label: "US", value: "US" }, { label: "IN", value: "IN" }]}
             value={phone.country}
-            className="w-[80px]"
+            onChange={(val) => console.log(val)}
+            options={[
+              {
+                value: "US",
+                label: (
+                  <div className="flex items-center gap-1">
+                    <UsFlagIcon />
+                    <span>US</span>
+                  </div>
+                ),
+              },
+            ]}
+            className="w-[100px]"
           />
+
           <Input
             value={phone.number}
             className="flex-1"
@@ -116,15 +128,15 @@ export function BusinessDetailsForm() {
 
 
       <div className="text-sm mt-2 flex flex-col gap-3">
-        <div>
-          <span className="block font-medium">CREDIT LIMIT</span>
+        <div className='border-b pb-2'>
+          <span className="text-text-primary">CREDIT LIMIT</span>
           <div className="flex justify-between items-center">
             <span className="text-base font-semibold">${BUSINESS_PROFILE_MOCK.creditLimit}</span>
             <button className="text-primary text-xl"><PlusIcon size={16} /></button>
           </div>
         </div>
         <div>
-          <span className="block font-medium">AVAILABLE CREDIT</span>
+          <span className="text-text-primary">AVAILABLE CREDIT</span>
           <div className="flex justify-between items-center">
             <span className="text-base font-semibold">${BUSINESS_PROFILE_MOCK.availableCredit}</span>
             <button className="text-primary"><RefreshCwIcon size={16} /></button>

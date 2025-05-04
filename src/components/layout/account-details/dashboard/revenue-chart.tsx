@@ -9,7 +9,7 @@ export function RevenueChart() {
 
   return <CardSection
     leftActions={
-      <PillToggle options={REVENUE_OPTIONS} />
+      <PillToggle options={REVENUE_OPTIONS} toggleGroupClass="text-sm gap-[6px]" />
     }
     rightActions={
       <>
@@ -27,12 +27,12 @@ export function RevenueChart() {
     <div className="bg-background px-2 py-4 max-h-[420px]">
       <div className="flex w-full justify-between mb-8">
         <div className="font-semibold text-lg">Revenue</div>
-        <div className="text-muted-foreground text-sm pt-4">
+        <div className="text-muted-foreground text-sm pt-2">
           Total Revenue: <span className="font-bold text-text-primary">${totalRevenue}</span>
         </div>
       </div>
 
-      <ResponsiveContainer width="100%" height={275}>
+      <ResponsiveContainer width="100%" height={280}>
         <BarChart data={REVENUE_DATA_2025} >
           <XAxis dataKey="month" />
           <YAxis tickFormatter={(v) => `$${v.toFixed(0)}`} />

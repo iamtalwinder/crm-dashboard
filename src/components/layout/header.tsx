@@ -1,7 +1,7 @@
 'use client'
 
 import { SearchInput, PillToggle, UserProfile } from "@/components/shared"
-import { BellIcon, CodeIcon } from "@/components/icons"
+import { BellIcon, Logo } from "@/components/icons"
 import { TIME_TOGGLE_OPTIONS } from "./constants"
 
 export function Header() {
@@ -11,7 +11,7 @@ export function Header() {
 
       <div className="flex items-center justify-between w-full h-16 px-4 border-b bg-foreground">
         <div className="flex items-center gap-[100px]">
-          <CodeIcon />
+          <Logo />
         </div>
 
         <div className="flex w-[600px]">

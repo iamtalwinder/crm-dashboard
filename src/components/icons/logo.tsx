@@ -1,7 +1,7 @@
 import { useResolvedTheme } from "@/lib/hooks";
 import React from "react";
 
-export function CodeIcon() {
+export function Logo() {
   const { isDarkTheme } = useResolvedTheme();
 
   return isDarkTheme ? (

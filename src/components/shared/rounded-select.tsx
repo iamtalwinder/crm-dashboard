@@ -1,21 +1,19 @@
-'use client'
-
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { cn } from "@/lib/utils"
+} from "@/components/ui/select";
+import { cn } from "@/lib/utils";
 
 type RoundedSelectProps = {
-  options: { label: string; value: string }[]
-  value?: string
-  placeholder?: string
-  onChange?: (value: string) => void
-  className?: string
-}
+  options: { label: React.ReactNode; value: string }[];
+  value?: string;
+  placeholder?: string;
+  onChange?: (value: string) => void;
+  className?: string;
+};
 
 export function RoundedSelect({
   options,
@@ -24,6 +22,8 @@ export function RoundedSelect({
   onChange,
   className,
 }: RoundedSelectProps) {
+  const selectedOption = options.find((opt) => opt.value === value);
+
   return (
     <Select value={value} onValueChange={onChange}>
       <SelectTrigger
@@ -32,7 +32,11 @@ export function RoundedSelect({
           className
         )}
       >
-        <SelectValue placeholder={placeholder} />
+        {selectedOption ? (
+          <div className="flex items-center gap-1">{selectedOption.label}</div>
+        ) : (
+          <SelectValue placeholder={placeholder} />
+        )}
       </SelectTrigger>
       <SelectContent side="bottom">
         {options.map((option) => (
@@ -42,5 +46,5 @@ export function RoundedSelect({
         ))}
       </SelectContent>
     </Select>
-  )
+  );
 }

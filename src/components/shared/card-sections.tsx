@@ -27,7 +27,7 @@ export function CardSection({
         <div className="flex items-center gap-2">
           {leftActions && <div>{leftActions}</div>}
           {leftTitle && (
-            <h3 className="text-lg font-semibold text-text-primary">
+            <h3 className="text-md font-semibold text-text-primary">
               {leftTitle}
             </h3>
           )}
