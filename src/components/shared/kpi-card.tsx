@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
-import { ArrowDownIcon, ArrowUpIcon } from "lucide-react";
+import ArrowUpIcon from "../icons/arrow-up-icon";
+import ArrowDownIcon from "../icons/arrow-down-icon";
 
 type KpiCardProps = {
   title: string;
@@ -40,9 +41,9 @@ export function KpiCard({
           )}
         >
           {isDown ? (
-            <ArrowDownIcon className="h-4 w-4" />
+            <ArrowDownIcon />
           ) : (
-            <ArrowUpIcon className="h-4 w-4" />
+            <ArrowUpIcon />
           )}
           {percentage}
         </span>

@@ -32,8 +32,8 @@ export function TopProductsTable() {
           render: (val) => <span>{val}</span>,
         },
         {
-          key: "date",
-          label: "Date",
+          key: "category",
+          label: "Category",
           width: "w-[20%]",
           render: (val) => <span>{val}</span>,
         },
@@ -41,7 +41,7 @@ export function TopProductsTable() {
           key: "price",
           label: "Price",
           width: "w-[15%]",
-          render: (val) => `$ ${val}`,
+          render: (val) => `$ ${val.toLocaleString(undefined, { minimumFractionDigits: 2 })}`,
         },
         {
           key: "revenue",
