@@ -33,3 +33,4 @@ export * from './etsy-icon';
 export * from './us-flag-icon';
 export * from './chat-icon';
 export * from './celebrate-icon';
+export * from './left-close-icon';

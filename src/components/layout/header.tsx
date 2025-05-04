@@ -3,6 +3,7 @@
 import { SearchInput, PillToggle, UserProfile } from "@/components/shared"
 import { BellIcon, Logo } from "@/components/icons"
 import { TIME_TOGGLE_OPTIONS } from "./constants"
+import LeftCloseIcon from "../icons/left-close-icon"
 
 export function Header() {
 
@@ -12,6 +13,10 @@ export function Header() {
       <div className="flex items-center justify-between w-full h-16 px-4 border-b bg-foreground">
         <div className="flex items-center gap-[100px]">
           <Logo />
+        </div>
+
+        <div className="flex gap-[86px]">
+          <LeftCloseIcon />
         </div>
 
         <div className="flex w-[600px]">
