@@ -38,7 +38,7 @@ export function RevenueChart() {
           <YAxis tickFormatter={(v) => `$${v.toFixed(0)}`} />
           <Tooltip formatter={(value) => `$${value}`} />
           <Bar dataKey="revenue" fill="#5b3cc4" radius={[4, 4, 0, 0]} barSize={20} background={false}>
-            <LabelList dataKey="revenue" position="top" formatter={(val) => `$${val.toFixed(0)}`} />
+            <LabelList dataKey="revenue" position="top" formatter={(val: string) => `$${val}`} />
           </Bar>
         </BarChart>
       </ResponsiveContainer>

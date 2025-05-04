@@ -1,4 +1,4 @@
-import { KpiCard } from "@/components/shared";
+import { KpiCard, KpiCardProps } from "@/components/shared";
 import { ORDER_STATS } from "@/data/orders";
 import OrdersIcon from "@/components/icons/orders-icon";
 import TokenIcon from "@/components/icons/token-icon";
@@ -46,7 +46,7 @@ export function KPICards() {
             title={stat.title}
             value={data.value}
             icon={stat.icon}
-            trend={data.trend as any}
+            trend={data.trend as KpiCardProps['trend']}
             percentage={data.percentage}
             time={data.time}
           />

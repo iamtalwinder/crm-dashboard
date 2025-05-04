@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import ArrowUpIcon from "../icons/arrow-up-icon";
 import ArrowDownIcon from "../icons/arrow-down-icon";
 
-type KpiCardProps = {
+export type KpiCardProps = {
   title: string;
   value: string | number;
   icon: React.ReactNode;
