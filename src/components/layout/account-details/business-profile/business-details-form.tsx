@@ -33,12 +33,12 @@ export function BusinessDetailsForm() {
 
       <div className="flex flex-col gap-2">
         <label className="text-sm font-medium">Account Name</label>
-        <Input value={BUSINESS_PROFILE_MOCK.name} />
+        <Input value={BUSINESS_PROFILE_MOCK.name} onChange={() => { }} />
       </div>
 
       <div className="flex flex-col gap-2">
         <label className="text-sm font-medium">Email</label>
-        <Input value={BUSINESS_PROFILE_MOCK.email} />
+        <Input value={BUSINESS_PROFILE_MOCK.email} onChange={() => { }} />
       </div>
 
       <div className="flex justify-between items-center">
@@ -72,6 +72,7 @@ export function BusinessDetailsForm() {
           <Input
             value={phone.number}
             className="flex-1"
+            onChange={() => { }}
           />
           <Button
             variant="destructive"
@@ -89,6 +90,7 @@ export function BusinessDetailsForm() {
           value={BUSINESS_PROFILE_MOCK.contactOwner}
           options={ownerOptions}
           className='w-full'
+          onChange={() => { }}
         />
       </div>
 
@@ -98,6 +100,7 @@ export function BusinessDetailsForm() {
           value={BUSINESS_PROFILE_MOCK.companyType}
           options={companyOptions}
           className='w-full'
+          onChange={() => { }}
         />
       </div>
 
@@ -107,13 +110,14 @@ export function BusinessDetailsForm() {
           value={BUSINESS_PROFILE_MOCK.industry}
           options={industryOptions}
           className='w-full'
+          onChange={() => { }}
         />
       </div>
 
 
       <div className="flex flex-col gap-2">
         <label className="text-sm font-medium">Website</label>
-        <Input value={BUSINESS_PROFILE_MOCK.website.toUpperCase()} />
+        <Input value={BUSINESS_PROFILE_MOCK.website.toUpperCase()} onChange={() => { }} />
       </div>
 
 
@@ -123,6 +127,7 @@ export function BusinessDetailsForm() {
           type="number"
           value={Number(BUSINESS_PROFILE_MOCK.employeeCount)}
           className="rounded-[12px] h-9 px-4 text-sm font-medium"
+          onChange={() => { }}
         />
       </div>
 

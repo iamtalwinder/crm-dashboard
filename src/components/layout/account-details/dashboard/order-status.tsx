@@ -1,3 +1,5 @@
+'use client'
+
 import { CardSection, DateModePicker, RoundedSelect } from "@/components/shared"
 import { ORDER_STATUS } from "@/data/orders"
 import clsx from "clsx"
